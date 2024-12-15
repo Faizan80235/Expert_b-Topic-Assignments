@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+ // Arrow functon
+// 1. Create an arrow function named doubleNumber that accepts a number and returns 
+    const doubleNumber=num =>{
+        return num*2
+    }
+    console.log(doubleNumber(10),"double number of 10")
+    console.log(doubleNumber(5), "double number of 5")
+    console.log(doubleNumber(11),"double  number of 11")
+// . Create an arrow function named calculateSquareRoot that accepts a number and 
+// returns its square root.
+let y=prompt("Enter a number")
+const calculateSquareRoot =square =>{
+    return y/square
+}
+console.log(calculateSquareRoot(prompt("Enter a number")))
+// Create an arrow function named convertMinutesToSeconds that accepts a number 
+// of minutes and returns the equivalent time in seconds
+const convertMinutesToSeconds=seconds =>{
+    return seconds * 60
+}
+console.log(convertMinutesToSeconds(2),"Second")
+// Create an arrow function named calculatePerimeter that accepts the length and 
+// width of a rectangle and returns its perimeter
+
+const calculatePerimeter=(length,width) =>{
+    return 2*(length+width)
+}
+console.log(calculatePerimeter(5,3))
+// Create an arrow function named multiply that accepts three numbers and returns 
+// the product of those numbers.
+const multiply=(num1,num2,num3) =>{
+    return num1*num2*num3
+}
+console.log(multiply(2,3,1))
+// Create an arrow function named findLargest that accepts three numbers and 
+// returns the largest of the three numbers.
+const findLargest=(a,b,c)=>{
+    if(a >=b && a>=c){
+        return a
+    }
+    if(b >=a && b>=c){
+        return b
+    }
+    else{
+        return c
+    }
+}
+console.log(findLargest(12,10,5),"largest value")
+
+// Create an arrow function named isVowel that accepts a single character and returns 
+// true if it’s a vowel (a, e, i, o, u), and false otherwise
+const isvowel=(vowel1,vowel2 ,vowel3,vowel4,vowel5) =>{
+    if(vowel1 =="a"){
+        return true
+    }
+    if(vowel2 =="e"){
+        return true
+    }if(vowel3 =="i"){
+        return true
+    }if(vowel4 =="o"){
+        return true
+    }if(vowel5 =="u"){
+        return true
+    }
+    else{
+        return "false"
+    }
+}
+console.log(isvowel("b" ,"c","d","f","g"))
+// . Create an arrow function named calculateArea that takes the radius of a circle 
+// and returns the area (use the formula: π * radius^2). Add a check to ensure the radius 
+// is greater than 0. If it's not, return an error message
+const calculateArea=radius =>{
+    if(radius <=0){
+        return "radius must be enter greater than zero"
+    }
+    return  Math.PI * radius**2
+}
+console.log(calculateArea(5))
+// . Create an arrow function named isPrime that accepts a number and returns true if 
+// the number is a prime number, and false otherwise.
+
+const isPrime=prime =>{
+   for(let i=1;i <100;i++){
+    if(prime /i===0){
+        return  "true"
+    }
+    else{
+        return  "false"
+    }
+   }
+}
+console.log(isPrime(15))
+console.log(isPrime(4))
+console.log(isPrime(18))
+// 10. Create an arrow function named fibonacci that takes a number n and returns an 
+// array containing the first n numbers of the Fibonacci sequence
+function fibonacci(num) 
+{ 
+    var num1 = 0; 
+    var num2 = 1; 
+    var sum; 
+   
+    for (var i = 0; i < num; i++)  
+    { 
+        sum = num1 + num2; 
+        num1 = num2; 
+        num2 = sum; 
+    } 
+    return num2; 
+} 
+document.write(fibonacci(1)); 
+document.write(fibonacci(12))
+
+
+// 1. Using the map method, create an arrow function named squareArray that accepts an 
+// array of numbers and returns a new array where each number is squared
+const squareArray=arr => arr.map(function(numbers){
+   return numbers*numbers
+})
+console.log(squareArray([1,2,3,4,5]))
+// sing the filter method, create an arrow function named filterOddNumbers that 
+// accepts an array of numbers and returns a new array containing only the odd numbers
+
+const filterOddNumbers=odd => odd.filter(function(numberss){
+    return numberss %2 !==0
+})
+console.log(filterOddNumbers([0,1,2,3,4,5,6,7,8,9]))
+// . Using the forEach method, create an arrow function named countArrayElements
+// that accepts an array of strings and logs the length of each string to the console
+
+
+
+let names = ['Asad', 'Faizan', 'Ibrar', 'Qadeer'];
+let longNames = [];
+
+names.forEach(function(word) {
+  if (word.length > 4) {
+    longNames.push(word);
+  }
+});
+
+console.log(longNames);
+// 4. Using the reduce method, create an arrow function named concatenateStrings
+// that accepts an array of strings and returns a single concatenated string.
+
+const concatenateStrings=['hello','',"ali"]
+const result=concatenateStrings.reduce((acc,acc1) => acc+acc1,'')
+console.log(result)
+// 5. Using the reduce method, create an arrow function named findMaxValue that 
+// accepts an array of numbers from the user and returns the largest number in the array.
+const findmaxvalue= (...args) => Math.max(...args);
+
+console.log(findmaxvalue(12, 10, 5), "largest value");
+// . Create an object named car that has a property brand with a string value. Display 
+// the value of the brand property in the console.
+let car={
+    brand:"toyota"
+}
+console.log(car.brand)
+
+// 2. Using the existing car object, add a new property called year that holds a number 
+// representing the year of the car. Then, display the year property in the console
+car.year=2017
+console.log(car.year)
+// . Expand the car object by adding a method named displayInfo that logs the brand 
+// and year of the car to the console. Call this method to see the output
+function displayInfo(){
+    console.log(car,)
+}
+displayInfo()
+// 4. Create a new object named book with a property title (a string) and a property 
+// author (also a string). Display the title property in the console
+const book = {
+  title: 'To Kill a Mockingbird',
+  author: ' Harper Lee'
+};
+console.log(book.title)
+// . Add a method named getSummary to the book object that returns a string 
+// combining the title and author in a readable format (e.g., "Title by Author"). Call this 
+// method to display the summary in the console.
+function getSummary(){
+    console.log(book)
+}
+getSummary()
+
+
+</script>
+</html>
