@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(100, 80, 40);
+}
+/* nav bar css */
+nav{
+    text-align: right;
+    border: 5px ridge;
+    border-color: rgb(202, 200, 100);background-color: #fffccc;
+}
+ /* file decoration none */
+a{
+    text-decoration: none;
+}
+ /* element selector */
+h1{
+  border: 2px ridge;
+  width: max-content;
+  background-color:#ffcc;
+  color: goldenrod;
+  border-color: rgb(200,200,100);
+}
+ /* element selector  */
+div{
+    border: 5px ridge;
+    width: max-content;
+    border-color: rgb(200,200,100);
+    background-color: #fffccc;
+}
+/* class selector  */
+.contact{
+    width: max-content;
+    float: right;
+}
+/* id selector  */
+#web{
+    border: 5px ridge;border-color: rgb(202, 200, 100);
+    width: max-content;background-color: #ffcc;
+}
+/* id selector  */
+#Front-End{
+    border: 5px ridge;border-color: rgb(202, 200, 100);
+    width: max-content;background-color: #ffcc;
+}
+/* button css apply */
+button{
+    background-color: aqua;
+}

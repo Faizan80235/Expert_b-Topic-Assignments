@@ -1,0 +1,56 @@
+/* body background color */
+
+body {
+    background-color: rgb(214, 174, 94);
+}
+
+/* body background color end  */
+/* nav bar css */
+
+/* nav style start */
+nav {
+    text-align: right;
+    border: 5px ridge;
+    border-color: rgb(230, 82, 94);
+    background-color: #fffeee;
+}
+
+/* nav style end */
+
+/* text decoration css a tag */
+a {
+    text-decoration: none;
+}
+
+/* text decoration a tag end  */
+/* element selector star  */
+h1 {
+    text-align: center;
+}
+
+/* element selector end  */
+
+/* id selctor  */
+#Bio{
+    text-align: center;
+}
+/* id  selector end */
+
+/* button style start  */
+button{
+ width: 560px;background-color: skyblue;
+}
+/* button style end  */
+
+/* element selector start  */
+
+h1{
+    border: 5px ridge;background-color: antiquewhite;
+}
+/* element selector end  */
+
+/* id selector start  */
+#href{
+    background-color: azure;width:40px;
+}
+/* id selector end  */

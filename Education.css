@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(223,200,100);
+}
+nav{
+    text-align: right;
+    border: 5px ridge;
+    border-color: rgb(202, 200, 100);background-color: #fffccc;
+}
+ /* file decoration none */
+a{
+    text-decoration: none;
+}
+/* table for Education  marks  */
+table{
+    background-color: #fffddd;
+    width: 440px 
+}
+
+/* Univeresal selector */
+*{
+    color:rgb(68, 41, 13);
+}
+/* clas selector  */
+.box{
+    border: 5px ridge;border-color: aquamarine;
+}
+/* id selector  */
+#Uniquesbox{
+    border: 5px ridge;
+    border-color: lightgoldenrodyellow;
+    width: max-content;
+    background-color: #fffddd;
+}
