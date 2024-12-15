@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #111;
+        }
+
+        img {
+            width: 350px;
+            margin: 2%;
+            position: fixed;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        h1 {
+            margin-left: 45%;
+            margin-top: 5%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        span {
+            color: orangered;
+            font-size: 50px;
+            margin-right: 2%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        h1 {
+            font-size: 50px;
+            display: flex;
+            color: orangered;
+            flex-wrap: wrap;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        button{
+            margin-top: 0%;
+            display: flex;
+        margin-left: 35%;
+        padding: 1%;
+        border-radius: 50px;
+        background-color: transparent;
+        border-color:orangered;
+        color: white;
+        }
+        button:hover{
+            background-color: orangered;
+            transition: 3s;
+        }
+        p{
+        text-align: justify;
+        letter-spacing: 1px;
+        margin-left: 35%;
+        font-size: 25px;
+        color: white;
+        width:50%;
+        }
+       @media   (max-width:600px){
+        img{
+            position: absolute;
+            margin-left: 5%;
+        }
+       h1{
+        margin: 0%;
+        font-size: 28px;
+        display: inline;
+        width: 330%;
+        margin-top: 134%;
+       }
+       p{
+        margin-left: 0%;
+       width: 100%;
+        /* margin-top: 74%; */
+        letter-spacing: 0;
+       text-align: justify;
+        flex-wrap: nowrap;
+       }
+      
+       }
+       @media(max-width:600px){
+       #menu12{
+        display: none;
+       }
+     
+       }
+       a{
+        display: inline-flex;
+
+        text-decoration: none;
+        margin-left: 15%;
+        font-size: 24px;
+        color: white;
+        justify-content: space-around;
+       }
+   
+      i, .fa-bars,#asad{
+            color: #111;
+        }
+        @media (max-width:600px){
+            i,.fa-bars,#asad{
+                color: white;
+            }
+        }
+       #raman{
+        margin-left:85%;
+        display: none;
+       }
+    </style>
+</head>
+
+<body>
+  <div id="menu1" >
+    <i class="fa-solid fa-bars" id="asad"></i>
+
+    <div id="menu12">
+        <a href="#"id="menu1 ">Home</a>
+        <a href="#"id="menu1">About</a>
+        <a href="#"id="menu1">Skill</a>
+    
+        <a href="#"id="menu1">Contact</a>
+    </div>
+    <i class="fa-solid fa-x" id="raman"></i>
+
+  </div>
+    <div class="container">
+
+        <img src="dark.jpg" alt="image">
+        <br>
+        <h1>- I'M FAIAN ALI</h1>
+     <p>I'm a Tunisian based web designer & front‑end developer focused on crafting clean & user‑friendly experiences, I am passionate about building excellent software that improves the lives of those around me.
+
+     </p>
+    </div>
+
+    <br>
+    
+    <button>About More me</button>
+
+
+</body>
+<script>
+    let bar=document.getElementById('asad');
+    let menu=document.getElementById('menu12');
+    let rama=document.getElementById('raman');
+    bar.addEventListener("click",show);
+    rama.addEventListener("click",shows);
+    function show(){
+        menu.style.display='flex';
+        menu.style.flexDirection='column';
+        menu.style.margin='0%'
+        rama.style.display='block';
+    }
+    function shows(){
+        rama.style.display='none';
+       
+        menu.style.display='none';
+        menu.style.margin='0%'
+    }
+</script>
+</html>
